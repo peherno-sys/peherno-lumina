@@ -86,7 +86,7 @@ export function Header() {
                 type="button"
                 onClick={() => setCurrency(c)}
                 className={cn(
-                  "px-1.5 py-0.5 transition-opacity",
+                  "whitespace-nowrap px-1.5 py-0.5 transition-opacity",
                   currency === c ? "text-gold" : "opacity-60 hover:opacity-100",
                 )}
               >
@@ -108,7 +108,7 @@ export function Header() {
           <nav className="hidden flex-1 items-center gap-7 lg:flex">
             <a
               href="#new-arrivals"
-              className="text-[11px] uppercase tracking-[0.18em] text-foreground/80 transition-colors hover:text-gold"
+              className="whitespace-nowrap text-[11px] uppercase tracking-[0.18em] text-foreground/80 transition-colors hover:text-gold"
             >
               New Arrivals
             </a>
@@ -116,7 +116,7 @@ export function Header() {
               type="button"
               onMouseEnter={() => setOpenMega("shop")}
               onFocus={() => setOpenMega("shop")}
-              className="flex items-center gap-1 text-[11px] uppercase tracking-[0.18em] text-foreground/80 transition-colors hover:text-gold"
+              className="flex items-center gap-1 whitespace-nowrap text-[11px] uppercase tracking-[0.18em] text-foreground/80 transition-colors hover:text-gold"
             >
               Shop <ChevronDown className="h-3 w-3" />
             </button>
@@ -124,7 +124,7 @@ export function Header() {
               type="button"
               onMouseEnter={() => setOpenMega("collections")}
               onFocus={() => setOpenMega("collections")}
-              className="flex items-center gap-1 text-[11px] uppercase tracking-[0.18em] text-foreground/80 transition-colors hover:text-gold"
+              className="flex items-center gap-1 whitespace-nowrap text-[11px] uppercase tracking-[0.18em] text-foreground/80 transition-colors hover:text-gold"
             >
               Collections <ChevronDown className="h-3 w-3" />
             </button>
@@ -133,7 +133,7 @@ export function Header() {
                 key={l}
                 href={`#${l.toLowerCase().replace(/\s+/g, "-")}`}
                 onMouseEnter={() => setOpenMega(null)}
-                className="text-[11px] uppercase tracking-[0.18em] text-foreground/80 transition-colors hover:text-gold"
+                className="whitespace-nowrap text-[11px] uppercase tracking-[0.18em] text-foreground/80 transition-colors hover:text-gold"
               >
                 {l}
               </a>
